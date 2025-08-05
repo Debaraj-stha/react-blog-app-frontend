@@ -213,8 +213,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
                     || stateFrom === "/login/with_email"
                     || "/login/with_email_password" ||
                     !stateFrom ? "/" : stateFrom
-                console.log("redirecting to", redirectTo)
-                navigate(stateFrom)
+                navigate(redirectTo)
             }
             setUser(authUser);
             //clear form field after success
@@ -289,7 +288,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         }
         const unsubscribe = firebaseAuth.onAuthStateChanged(async (user) => {
             if (!user) {
-                console.log("user is null", user);
                 setUser(null);
             } else {
                 const userInfo = await fetchUserId(user.uid);
@@ -307,7 +305,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
                     isVarified: user.emailVerified
                 };
                 setUser(authUser);
-                console.log("user info", authUser)
+               
 
             }
             setLoading(false)

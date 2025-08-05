@@ -99,7 +99,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
             const res = await apiHelper({
                 url: `${BASE_URL}api/author/blogs/${author_id}?skip=${skip}&limit=${limit}&fetchBlogsOnly=${fetchBlogsOnly}`,
             });
-            console.log("res", res)
             const fetchedAuthor = res.author!;
             if (!fetchedAuthor) {
                 addMessage({ message: res.message, type: "info" });
@@ -160,7 +159,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
             addMessage({ message: "Author ID is required to update author", type: "error" });
             return;
         }
-        console.log("state during submitting", state)
         if (!state.name || !state.details.username || !state.email) {
             addMessage({ message: "Name, username, and email are required to update author", type: "error" });
             return;
@@ -213,7 +211,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
             formData.append("file", file);
             //upload file to cloudinary
             const data = await uploadFile(formData)
-            console.log("uploaded file data", data)
             //update state with uploaded file url
             dispatch({ type: "SET_PROFILE", payload: data.secure_url });
             //show success message
@@ -305,13 +302,10 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
     const handleSubscribeUnsubscribe = useCallback(async (user_id: string, hasSubscribed: boolean,
         isSubscribedToAll: boolean,
         author_id?: string,) => {
-        console.log(author_id, user_id)
         if (!user_id) return false
         try {
-            console.log("called")
             if (hasSubscribed) {
                 const url = `${BASE_URL}api/unsubscribe/${author_id}`
-                console.log("unsubscribe")
                 const res = await apiHelper({
                     url,
                     method: 'DELETE',
@@ -327,7 +321,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
                 method: 'POST',
                 data: { user_id: user_id }
             })
-            console.log("res", res)
             addMessage({ message: res.message, type: 'success' })
 
             return true
@@ -416,7 +409,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
             addMessage({ message: res.message, type: "success" })
 
         } catch (error: any) {
-            console.log(error)
             addMessage({ message: `Error while deleting blog:${error.message}`, type: 'error' })
         }
     }, [author_id, addMessage, draftBlogs, scheduledBlog, authorWithBlogs])
@@ -444,7 +436,6 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
                 const response = await apiHelper({
                     url: url,
                 });
-                console.log("rs", response)
                 setSubscriberCountWithStatus(response)
             } catch (err) {
                 console.error("Failed to check subscription status:", err);
