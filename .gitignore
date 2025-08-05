@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 .env
 #custom files
-**firebase.config.ts
+firebase.config.ts
 x.md
 
