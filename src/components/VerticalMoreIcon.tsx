@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdMoreVert } from 'react-icons/md'
 
 type VerticalMoreIconType = {

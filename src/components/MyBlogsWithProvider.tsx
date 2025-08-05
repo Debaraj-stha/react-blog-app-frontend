@@ -1,4 +1,3 @@
-import React from 'react'
 import MyBlogs from '../pages/MyBlogs'
 import AuthorProvider from '../Provider/AuthorProvider'
 import { PaginationProvider } from '../Provider/PaginationProvider'

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import Modal from './Modal'
 import { BiCopy, BiX } from 'react-icons/bi'
 import { BsTwitterX } from 'react-icons/bs'

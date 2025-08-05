@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAuthor } from '../Provider/AuthorProvider'
 
 const LoadMoreButton = ({ author_id ,limit}: { author_id: string ,limit?:number}) => {

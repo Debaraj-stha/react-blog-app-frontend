@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PopupCard from '../PopupCard'
 import { SketchPicker } from 'react-color'
 import { useCreateContext } from '../../Provider/CreatePostProvider';

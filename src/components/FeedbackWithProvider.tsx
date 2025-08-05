@@ -1,5 +1,3 @@
-import React from 'react'
-import SingleBlog from './SingleBlog'
 import BlogProvider from '../Provider/BlogProvider'
 import { PaginationProvider } from '../Provider/PaginationProvider'
 

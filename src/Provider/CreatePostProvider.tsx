@@ -15,7 +15,6 @@ import apiHelper from "../helper/api-helper";
 import RenderCodeBlock from "../components/RenderElements/RenderCodeBlock";
 import RenderVideoElement from "../components/RenderElements/RenderVideoElement";
 import { useMessageContext } from "./MessageProviders";
-import { BASE_URL } from "../constraints";
 import type { BlogType } from "../types/blog";
 import blogStatusReducer from "../helper/reducers/blogStatusReducer";
 

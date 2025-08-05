@@ -1,8 +1,17 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode, type SetStateAction } from "react";
+import {
+    createContext,
+    useCallback,
+    useContext,
+    useEffect,
+    useMemo,
+    useState,
+    type ReactNode,
+    type SetStateAction,
+} from "react";
 import { io, Socket } from "socket.io-client";
 import { usePeer } from "./PeerProvider";
 import { useAuth } from "./AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useMessageContext } from "./MessageProviders";
 
 
@@ -19,7 +28,7 @@ type SocketContextType = {
     setRoomId: React.Dispatch<SetStateAction<string>>
     joinRoom: () => void
     createRoom: () => void
-    loading: boolean
+ 
     hasRoomCreated: boolean,
     hasJoined: boolean
     messageInput: string
@@ -57,10 +66,9 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
     const [roomId, setRoomId] = useState<string>("")
     const [hasRoomCreated, setRoomCreated] = useState(false)
     const [hasJoined, setJoined] = useState(false)
-    const [loading, setLoading] = useState(false)
     const [messages, setMessages] = useState<MessageType[] | null>(null)
     const { user } = useAuth()
-    const { peer, createAnswer, createOffer, setRemoteAnswer, sendStream, remoteStream, setRemoteStream } = usePeer();
+    const { peer, createAnswer, createOffer, setRemoteAnswer, sendStream, remoteStream } = usePeer();
     const [messageInput, setMessageInput] = useState<string>("")
     const [offerStatus, setOfferStatus] = useState<OfferStatus>("idle");
     // const localVideoRef=useRef()
@@ -341,7 +349,6 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
         setRoomId,
         joinRoom,
         createRoom,
-        loading,
         hasRoomCreated,
         hasJoined,
         sendMessage,
@@ -363,7 +370,6 @@ const SocketProvider = ({ children }: { children: ReactNode }) => {
         setRoomId,
         joinRoom,
         createRoom,
-        loading,
         hasJoined,
         hasRoomCreated,
         sendMessage,

@@ -1,4 +1,3 @@
-import React from 'react'
 import EligibleToUpdateBlogs from '../pages/EligibleToUpdateBlogs'
 import AuthorProvider from '../Provider/AuthorProvider'
 

@@ -1,9 +1,8 @@
-import React, { memo, useState } from 'react'
+import  { memo } from 'react'
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import EditableInputField from './EditableInputField'
 import { BiCamera } from 'react-icons/bi'
-import NameAvatar from '../NameAvatar'
 import mockAuthor from '../../static/author'
 
 type AuthorCardHeaderProps = {

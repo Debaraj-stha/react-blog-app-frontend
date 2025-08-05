@@ -2,7 +2,6 @@ import ToolbarButton from "./ToolbarButton";
 import { useState } from "react";
 import FontFamilySelectBox from "./FontFamilySelectBox";
 import FontSizeSelectBox from "./FontSizeSelectBox";
-import { useCreateContext } from "../../Provider/CreatePostProvider";
 import { getToolbarButtons } from "./toolbarButtons";
 
 

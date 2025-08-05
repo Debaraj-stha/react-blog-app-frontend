@@ -1,4 +1,3 @@
-import React from 'react';
 import { stringToColor } from '../helper/randomColorGenerator';
 
 type NameAvatarProps = {

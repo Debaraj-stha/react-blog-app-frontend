@@ -1,4 +1,4 @@
-import React, { } from 'react'
+
 import AuthorCaredHeader from './AuthorCaredHeader'
 import AuthorEducationAndProfession from './AuthorEducationAndProfession'
 import AuthorSkillsAndHobbies from './AuthorSkillsAndHobbies'

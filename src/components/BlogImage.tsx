@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { ContentNode } from '../types/blog';
 import { findFirstImageBlock } from '../helper/utils';
 

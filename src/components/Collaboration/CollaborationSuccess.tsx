@@ -1,12 +1,11 @@
 import ChatCard from './ChatCard'
 import { useSocket } from '../../Provider/SocketProvider'
 import OfferCard from './OfferCard'
-import { usePeer } from '../../Provider/PeerProvider'
-import { useEffect, useRef, useState } from 'react'
+
 import VideoCard from './VideoCard'
 
 const CollaborationSuccess = () => {
-  const { offerStatus, incomingOffer, localStream,offerCall ,roomId} = useSocket()
+  const { offerStatus, incomingOffer, offerCall ,roomId} = useSocket()
 
 
   return (

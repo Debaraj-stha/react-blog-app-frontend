@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import  { memo } from 'react'
 import apiHelper from '../../helper/api-helper'
 import { BASE_URL, BLOG_POST_SUCCESS_REDIRECT_URL } from '../../constraints'
 import { useCreateContext } from '../../Provider/CreatePostProvider'

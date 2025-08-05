@@ -1,4 +1,3 @@
-import React from 'react';
 import QuickLinks from './QuickLinks';
 import Brannding from './Brannding';
 import CategoriesAndSocial from './CategoriesAndSocial';

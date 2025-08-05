@@ -1,5 +1,4 @@
 
-import type { BlogType } from "../types/blog";
 import type { LocalStorageBlogType } from "../types/localStorageBlogType";
 
 const STORAGE_KEY_PREFIX = "saved_blogs_";

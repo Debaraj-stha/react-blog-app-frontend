@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useAuthor } from '../../Provider/AuthorProvider';
 import getIcon from './dahboard-helper';
 import DashboardSectionWrapper from './DashboardSectionWrapper';

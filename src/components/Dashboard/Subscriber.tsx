@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { FaUserFriends } from 'react-icons/fa';
 import { useAuthor } from '../../Provider/AuthorProvider';
 import SubscriberModal from './SubscriberModal';

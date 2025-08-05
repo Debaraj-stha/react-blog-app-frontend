@@ -1,6 +1,5 @@
 import type React from "react";
 import type { ReactNode } from "react"
-import type { Descendant } from "slate";
 import type { ContactFormState, ErrorTypes } from "./contact";
 import type { FeedbackType } from "./feedbackType";
 

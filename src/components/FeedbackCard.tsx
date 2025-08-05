@@ -1,6 +1,5 @@
-import React, { memo } from 'react'
+import { memo } from 'react';
 import type { FeedbackType } from '../types/feedbackType'
-import { stringToColor } from '../helper/randomColorGenerator'
 import NameAvatar from './NameAvatar'
 
 const FeedbackCard = memo(({ message, name, profile, createdAt, email }: FeedbackType) => {

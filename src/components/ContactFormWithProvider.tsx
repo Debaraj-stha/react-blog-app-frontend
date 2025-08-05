@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactFormProvider from '../Provider/ContactFormProvider'
 import Contact from '../pages/Contact'
 

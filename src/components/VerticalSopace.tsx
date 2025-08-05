@@ -1,4 +1,3 @@
-import React from 'react'
 /**
  * Add vertical space of height 160px
  * @returns 

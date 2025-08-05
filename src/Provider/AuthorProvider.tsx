@@ -249,7 +249,7 @@ const AuthorProvider = ({ children }: { children: ReactNode }) => {
         try {
             setLoading(true)
 
-            const [__, blogWithFeedbacks, blogsCounts, popularBlogs, _, recentActivity, scheduledDraftBlogs] = await Promise.all([
+            const [__, blogWithFeedbacks, blogsCounts, popularBlogs, _, recentActivity] = await Promise.all([
                 loadAuthorWithBlog({ author_id, page: 0, shouldSetLoading: false }),
                 await apiHelper({ url: `${BASE_URL}api/author/blogs/feedback/all?author_id=${author_id}` }),
                 await apiHelper({ url: `${BASE_URL}api/blogs/counts-for-author?author_id=${author_id}` }),

@@ -1,4 +1,3 @@
-import React from 'react'
 import SocketProvider from '../Provider/SocketProvider'
 import PeerProvider from '../Provider/PeerProvider'
 import Collaboration from '../pages/Collaboration'

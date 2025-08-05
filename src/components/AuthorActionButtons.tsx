@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import { BiEdit, BiTrash } from 'react-icons/bi'
 import { MdFeedback, MdMoreVert, MdUnpublished } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'

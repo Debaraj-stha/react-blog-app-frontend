@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Bookmark from '../helper/bookmarkedBlogHelper';
 import PostCard from '../components/PostCard';
 import CardWrapper from '../components/CardWrapper';

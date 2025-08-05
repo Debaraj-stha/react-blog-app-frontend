@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import type { BlogType } from '../types/blog';
 

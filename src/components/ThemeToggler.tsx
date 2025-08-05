@@ -1,4 +1,3 @@
-import React from 'react'
 import ToolTip from './ToolTip'
 
 import { BiMoon, BiSun } from 'react-icons/bi'

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { useAuthor } from '../Provider/AuthorProvider'
 import BlogMainCard from '../components/BlogMainCard'
 import LoadingComponent from '../components/Loading'

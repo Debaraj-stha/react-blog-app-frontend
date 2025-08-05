@@ -1,4 +1,4 @@
-import React, { useMemo, type ReactElement } from 'react';
+import { useMemo, type ReactElement } from 'react';
 import '../css/animation/pop-up-animation.css';
 
 import { FaTimesCircle } from 'react-icons/fa';

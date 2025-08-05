@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import ToolTip from './ToolTip'
 import { RiBookMarkedFill } from 'react-icons/ri'
 import { BiBookmark, BiShare } from 'react-icons/bi'

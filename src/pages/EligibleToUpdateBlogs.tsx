@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet'
 import { useAuthor } from '../Provider/AuthorProvider'
 import { useParams } from 'react-router-dom'
 import LoadingComponent from '../components/Loading'
-import BlogMainCard from '../components/BlogMainCard'
 import PostCard from '../components/PostCard'
 
 const EligibleToUpdateBlogs = () => {

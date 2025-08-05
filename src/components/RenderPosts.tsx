@@ -1,7 +1,6 @@
 import React from 'react'
 import PostCard from './PostCard'
 import type { BlogType } from '../types/blog'
-import { Link } from 'react-router-dom'
 /**
  * Render the posts
  * @param posts - array of posts to render

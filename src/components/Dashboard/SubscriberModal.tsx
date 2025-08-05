@@ -1,4 +1,4 @@
-import React from 'react';
+
 import type { SubscriberType } from '../../types/author';
 import NameAvatar from '../NameAvatar';
 import Modal from '../Modal';

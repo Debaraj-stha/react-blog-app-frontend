@@ -1,5 +1,5 @@
 import React, { type ReactNode } from 'react'
-import VerticalMoreIcon from '../VerticalMoreIcon'
+
 type ListItemType = {
     title: string,
     subTitle: string

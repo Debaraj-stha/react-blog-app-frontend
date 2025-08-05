@@ -1,4 +1,4 @@
-import React, { memo, type ReactNode } from 'react'
+import { memo, type ReactNode } from 'react';
 import { CgClose } from 'react-icons/cg'
 type PopupCardProps={
     children:ReactNode,

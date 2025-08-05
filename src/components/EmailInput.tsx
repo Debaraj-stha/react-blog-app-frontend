@@ -1,10 +1,6 @@
-import React from 'react'
-import type { FormAction, FormState } from '../types/login';
+
 import { useAuth } from '../Provider/AuthProvider';
-type Props = {
-    state: FormState;
-    dispatch: React.Dispatch<FormAction>;
-};
+
 const EmailInput = () => {
 
     const { state, onChange, errors } = useAuth()

@@ -2,7 +2,6 @@ import React, {memo, type ReactNode } from 'react'
 import type { ContentNode } from '../types/blog'
 import RenderCodeBlock from './RenderElements/RenderCodeBlock'
 import type { ListItem } from '../types/slate'
-import { BiFullscreen, BiZoomIn } from 'react-icons/bi';
 import ImageGridWithModal from './ImageGridWithModal';
 
 const RenderBlogContent = memo(({ content }: { content: ContentNode[] }) => {

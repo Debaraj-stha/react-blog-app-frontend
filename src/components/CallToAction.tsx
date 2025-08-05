@@ -1,7 +1,4 @@
-import { useEffect, } from 'react'
 import { useAuthor } from '../Provider/AuthorProvider'
-import { useAuth } from '../Provider/AuthProvider'
-import useLoginAndSubscribe from '../helper/hooks/useLoginAndSubscribe'
 import SubscribeButton from './SubscribeButton'
 
 

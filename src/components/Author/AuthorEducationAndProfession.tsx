@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaUserTie } from 'react-icons/fa'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import EditableInputField from './EditableInputField'

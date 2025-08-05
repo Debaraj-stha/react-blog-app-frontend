@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import SingleBlog from '../components/SingleBlog';
 import LoadingComponent from '../components/Loading';
@@ -9,7 +8,7 @@ type BlogProps = {
     showFeedbackForm?: boolean,
     isAuthorView?: boolean
 }
-const Blog = ({ showAuthor = true, showSimilarBlogs = true, showFeedbackForm = true, isAuthorView = false }: BlogProps) => {
+const Blog = ({ showAuthor = true, showSimilarBlogs = true, showFeedbackForm = true }: BlogProps) => {
     const { blog, loading } = useBlogLoader();
     if (loading || !blog) {
         return (

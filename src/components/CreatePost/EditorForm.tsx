@@ -1,12 +1,12 @@
-import React, { memo, useEffect, useState } from 'react';
-import { Editor, Transforms, type Descendant } from 'slate';
+import React, { memo } from 'react';
+import {type Descendant } from 'slate';
 import { Slate, Editable } from 'slate-react';
 import Toolbar from './Toolbar';
 import { useCreateContext } from '../../Provider/CreatePostProvider';
 import Input from '../Input';
-import SaveToLocalStorage from '../../helper/autoSaveBlogToLocalstorage';
-import { useAuth } from '../../Provider/AuthProvider';
-import type { LocalStorageBlogType } from '../../types/localStorageBlogType';
+
+
+
 
 type EditorFormProps = {
   initialValue: Descendant[];
@@ -14,7 +14,6 @@ type EditorFormProps = {
 };
 
 const EditorForm = memo(({ handleSubmit }: EditorFormProps) => {
-  const { user } = useAuth();
   const {
     renderLeaf,
     renderElement,
@@ -22,11 +21,7 @@ const EditorForm = memo(({ handleSubmit }: EditorFormProps) => {
     setTitle,
     content,
     setContent,
-    title,
-    selectedTags,
-    setSelectedTags,
-    editors,
-    setEditors,
+    title
   } = useCreateContext();
 
 

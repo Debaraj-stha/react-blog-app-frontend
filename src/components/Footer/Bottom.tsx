@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Bottom = () => {
     return (
         <div className="text-center text-xs text-gray-100 mt-8 ">

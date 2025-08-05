@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import useLoginAndSubscribe from '../helper/hooks/useLoginAndSubscribe'
 import { useAuthor } from '../Provider/AuthorProvider'
 import { useAuth } from '../Provider/AuthProvider'

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import LoginForm, { LoginOptions } from '../components/Login/LoginForm'
+import { useEffect } from 'react';
+import { LoginOptions } from '../components/Login/LoginForm';
 import { firebaseAuth } from '../../firebase.config';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

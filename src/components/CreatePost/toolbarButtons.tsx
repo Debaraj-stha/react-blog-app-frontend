@@ -1,4 +1,4 @@
-import ToolbarButton from "./ToolbarButton";
+
 import { isBlockActive, isMarkActive, toggleBlock, toggleList, toggleMark } from "./helper";
 import {
   FiBold,

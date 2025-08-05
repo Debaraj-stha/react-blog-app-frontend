@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PopupCard from '../PopupCard';
 import { useCreateContext } from '../../Provider/CreatePostProvider';
 import { symbols } from '../../static/special_symbols';

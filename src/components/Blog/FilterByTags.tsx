@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useState } from 'react';
+import  { memo, useCallback, useEffect, useState } from 'react';
 import { useBlogContext } from '../../Provider/BlogProvider';
 
 type ItemProps = {

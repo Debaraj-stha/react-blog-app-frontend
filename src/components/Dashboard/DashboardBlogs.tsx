@@ -1,11 +1,10 @@
-import React, { use, useEffect } from 'react'
+import  {  useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import RenderPosts from '../RenderPosts'
-import useAuthLoaderWithBlog from '../../helper/hooks/useAuthorLoaderBlog'
 import LoadingComponent from '../Loading'
 import LoadMoreButton from '../LoadMoreButton'
-import SectionHeading from './SectionHeading'
+
 import { BiBook } from 'react-icons/bi'
 import DashboardSectionWrapper from './DashboardSectionWrapper'
 

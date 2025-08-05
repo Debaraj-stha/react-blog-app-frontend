@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react';
 import AuthorCardHeader from '../components/Author/AuthorCaredHeader'
 import { useAuthor } from '../Provider/AuthorProvider'
 import AuthorEducationAndProfession from '../components/Author/AuthorEducationAndProfession'

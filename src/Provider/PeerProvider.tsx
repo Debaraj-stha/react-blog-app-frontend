@@ -18,7 +18,7 @@ type PeerContextType = {
 const PeerContext = createContext<PeerContextType | null>(null)
 const PeerProvider = ({ children }: { children: ReactNode }) => {
     const [remoteStream, setRemoteStream] = useState<MediaStream | null>(null);
-    const [iceConnectionState, setIceConnectionState] = useState('new');
+ 
     const peer = useMemo(() => {
         const newPeer = new RTCPeerConnection({
             iceServers: [
@@ -39,7 +39,7 @@ const PeerProvider = ({ children }: { children: ReactNode }) => {
 
         newPeer.oniceconnectionstatechange = () => {
             console.log("ICE connection state:", newPeer.iceConnectionState);
-            setIceConnectionState(newPeer.iceConnectionState);
+            
             if (newPeer.iceConnectionState === 'failed') {
                 console.log("ICE failed, trying to restart...");
                 newPeer.restartIce();
@@ -94,9 +94,6 @@ const PeerProvider = ({ children }: { children: ReactNode }) => {
     }
     const sendStream = (stream: MediaStream) => {
         const existingSenders = peer.getSenders().map(sender => sender.track);
-
-
-
         for (const track of stream.getTracks()) {
             if (!existingSenders.includes(track)) {
                 peer.addTrack(track, stream);

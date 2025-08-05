@@ -1,4 +1,4 @@
-import React, { useState, useMemo, memo, useEffect } from 'react'
+import { useState, useMemo, memo, useEffect } from 'react';
 import { BiFullscreen } from 'react-icons/bi'
 import RenderImageCarousel from './RenderIMageCarousel'
 import ToolTip from './ToolTip'

@@ -1,4 +1,3 @@
-import React from 'react';
 import WhatWeOffer from '../components/About/WhatWeOffer';
 import WhoWeAre from '../components/About/WhoWeAre';
 import WelcomeMessage from '../components/About/WelcomeMessage';

@@ -1,10 +1,8 @@
-import React, { useState, type ReactNode } from 'react';
+import { type ReactNode } from 'react';
 import LogoutButton from '../components/LogoutButton';
 import SubscribeButton from '../components/SubscribeButton';
 import AuthorProvider from '../Provider/AuthorProvider';
 import { useAuth } from '../Provider/AuthProvider';
-import { useTheme } from '../Provider/ThemeProvider';
-import { BiMoon, BiSun } from 'react-icons/bi';
 import ThemeToggler from '../components/ThemeToggler';
 import ToolTip from '../components/ToolTip';
 const SectonWrapper = ({ children }: { children: ReactNode }) => {

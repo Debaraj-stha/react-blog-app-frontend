@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
 import { firebaseAuth } from '../../firebase.config';
 import { useNavigate } from 'react-router-dom';

@@ -1,5 +1,5 @@
-import React from 'react'
-import { FaFire, FaEye, FaHeart } from 'react-icons/fa'
+
+import { FaFire, FaEye } from 'react-icons/fa'
 import DashboardSectionWrapper from './DashboardSectionWrapper'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import { RiFeedbackFill } from 'react-icons/ri'

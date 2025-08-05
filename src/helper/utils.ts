@@ -1,4 +1,4 @@
-import type { BlogType, ContentNode } from "../types/blog"
+import type { ContentNode } from "../types/blog";
 
 export const getQueryParams = (key: string) => {
   const params = new URLSearchParams(window.location.search)

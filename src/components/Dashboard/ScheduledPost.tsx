@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { FaClock } from 'react-icons/fa'
 import DashboardSectionWrapper from './DashboardSectionWrapper'
 import { useAuthor } from '../../Provider/AuthorProvider'
@@ -40,7 +40,8 @@ const navigate=useNavigate()
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [])
-  const handleDelete = (e: React.MouseEvent<HTMLElement>, blog_id: string) => {
+  const handleDelete = (blog_id: string) => {
+
     deleteBlog(blog_id, true)
   }
   const handlePublish = (blog_id: string) => {
@@ -77,7 +78,7 @@ const navigate=useNavigate()
                       <p onClick={() => navigate(`/author/blog/${blog._id}/edit`)} className="text-sm text-gray-700 dark:text-gray-200 hover:text-blue-600 cursor-pointer">
                         Edit
                       </p>
-                      <p onClick={(e) => handleDelete(e, blog._id)} className="text-sm text-gray-700 dark:text-gray-200 hover:text-red-500 cursor-pointer mt-1">
+                      <p onClick={() => handleDelete(blog._id)} className="text-sm text-gray-700 dark:text-gray-200 hover:text-red-500 cursor-pointer mt-1">
                         Delete
                       </p>
                       <p className="text-sm text-gray-700 dark:text-gray-200 hover:text-green-500 cursor-pointer mt-1"
@@ -85,7 +86,7 @@ const navigate=useNavigate()
                         Publish
                       </p>
                       <p className="text-sm text-gray-700 dark:text-gray-200 hover:text-green-500 cursor-pointer mt-1"
-                        onClick={(e) => {
+                        onClick={() => {
                           setSelectedBlogId(blog._id);
                           setTimePickerOpen(true)
                         }}>

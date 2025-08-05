@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import  { memo } from 'react'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import EditableInputField from './EditableInputField'
 import { capitalizeFirstLetter } from '../../helper/utils'

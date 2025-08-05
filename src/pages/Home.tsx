@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import { useAuth } from '../Provider/AuthProvider'
-import { firebaseAuth } from '../../firebase.config'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import CallToAction from '../components/CallToAction'
 import CategoriesLink from '../components/CategoriesLink'
 
-import RecentPosts from '../components/RecentPosts'
 import HeroSection from '../components/HeroSection'
-import BlogProvider from '../Provider/BlogProvider'
 import RecentPostWithProviders from '../components/RecentPostWithProviders'
 import AuthorProvider from '../Provider/AuthorProvider'
 

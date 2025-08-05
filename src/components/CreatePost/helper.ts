@@ -1,5 +1,5 @@
 import { Editor, Transforms, Element as SlateElement, Path } from 'slate';
-import type { BlockType, CustomElement, CustomText, ImageElement, ListType, ParagraphElement, VideoElement } from '../../types/slate';
+import type { BlockType, CustomElement, CustomText, ImageElement, ListType,  VideoElement } from '../../types/slate';
 
 
 

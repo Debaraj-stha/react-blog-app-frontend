@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import  { memo } from 'react'
 import {
     FaGithub,
     FaLinkedin,
@@ -28,7 +28,7 @@ type AuthorSocialProps = {
 
 const AuthorSocial = memo(({ details }: AuthorSocialProps) => {
     // if (!details?.social && !details?.website && !details?.email) return null
-    const { isUpdate, dispatch, state } = useAuthor()
+    const { isUpdate } = useAuthor()
 
     return (
         <div>

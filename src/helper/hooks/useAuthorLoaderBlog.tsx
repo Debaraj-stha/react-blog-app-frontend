@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useAuthor } from "../../Provider/AuthorProvider"
 import { useEffect } from "react"
-import { useAuth } from "../../Provider/AuthProvider";
 
 type AuthorLoaderWithBlogType = {
     limit?: number;

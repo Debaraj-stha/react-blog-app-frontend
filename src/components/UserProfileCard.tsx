@@ -1,4 +1,3 @@
-import React from 'react'
 import LogoutButton from './LogoutButton'
 import IconNavLink from './IconNavLink'
 import {

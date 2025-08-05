@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import CardWrapper from '../components/CardWrapper';
 import PostCard from '../components/PostCard';

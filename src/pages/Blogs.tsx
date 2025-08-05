@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import RenderBlog from '../components/Blog/RenderBlog'
 import BlogHeader from '../components/Blog/BlogHeader'
 import { usePagination } from '../Provider/PaginationProvider'
-import { posts } from '../static/static_posts'
 import { Helmet } from 'react-helmet'
 import { useBlogContext } from '../Provider/BlogProvider'
-import apiHelper from '../helper/api-helper'
-import { BASE_URL } from '../constraints'
 
 const Blogs = () => {
   const { setItems, paginationButton, itemsPerPage, currentPage, setItemsPerPage } = usePagination()

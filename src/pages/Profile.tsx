@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react';
 import AuthorCard from '../components/Author/AuthorCard'
-import useAuthLoader from '../helper/hooks/useAuthorLoaderBlog'
 import { useAuthor } from '../Provider/AuthorProvider'
 import { useParams } from 'react-router-dom'
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import ItemPerPageSelectBox from './ItemPerPageSelectBox'
 import CategorySelectBox from './CategorySelectBox'
 import SearchBox from './SearchBox'

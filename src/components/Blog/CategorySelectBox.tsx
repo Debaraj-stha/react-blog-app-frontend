@@ -1,4 +1,3 @@
-import React from 'react'
 import { useBlogContext } from '../../Provider/BlogProvider'
 import { blogCategories } from '../../static/blog-categories'
 

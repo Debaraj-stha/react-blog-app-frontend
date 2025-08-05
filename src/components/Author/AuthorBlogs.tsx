@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { useAuthor } from '../../Provider/AuthorProvider'
 import RenderPosts from '../RenderPosts'
 import LoadMoreButton from '../LoadMoreButton'

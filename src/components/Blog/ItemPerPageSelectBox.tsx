@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { usePagination } from '../../Provider/PaginationProvider'
 
 const ItemPerPageSelectBox = () => {

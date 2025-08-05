@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { useSocket } from '../../Provider/SocketProvider'
 import { usePeer } from '../../Provider/PeerProvider'
 import { BiCameraOff, BiCamera } from 'react-icons/bi'
